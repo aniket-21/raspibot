@@ -1,10 +1,10 @@
 var mjpeg_img;
  
 function reload_img () {
-  mjpeg_img.src = "cam_pic.php?time=" + new Date().getTime();
+  mjpeg_img.src = "preview?time=" + new Date().getTime();
 }
 function error_img () {
-  setTimeout("mjpeg_img.src = 'cam_pic.php?time=' + new Date().getTime();", 100);
+  setTimeout("mjpeg_img.src = 'preview?time=' + new Date().getTime();", 100);
 }
 function initCapture() {
   mjpeg_img = document.getElementById("mjpeg_dest");
