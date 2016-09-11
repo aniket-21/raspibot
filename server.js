@@ -6,7 +6,7 @@ var app = express();
 var port = process.env.PORT || 5000;
 
 //Define Routes
-var authRouter = require('./src/routes/authRoutes.js')();
+var authRouter = require('./src/routes/navigationRoutes.js')();
 
 //Middleware
 app.use(express.static('resources'));
