@@ -64,7 +64,7 @@
    </script>
     <meta charset="utf-8" />
 </head>
-<body class="container" onload="setTimeout('init();', 100);">
+<body class="container">
     <div>
         <div class="text-center">
             <h2 style="margin-bottom: 20px">AUTOBOT</h2>
@@ -79,13 +79,13 @@
                 </div>
                 <div class="row" style="margin-top: 20px">
                     <div class="col-md-4 col-xs-4">
-                        <a href="#" class="btn btn-start btn-md center-block" style="max-width: 80px; height: 40px;">
+                        <a href="#" class="btn btn-start btn-md center-block" style="max-width: 80px;" onclick="setTimeout('initCapture();', 100);">
                             Start
                         </a>
                     </div>
                     <div class="col-md-4 col-xs-4"></div>
                     <div class="col-md-4 col-xs-4">
-                        <a href="#" class="btn btn-stop btn-md center-block" style="max-width: 80px;">
+                        <a href="#" class="btn btn-stop btn-md center-block" style="max-width: 80px;" onclick="setTimeout('stopCapture();', 100);">
                             Stop
                         </a>
                     </div>
