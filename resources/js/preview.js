@@ -1,7 +1,7 @@
 var mjpeg_img;
  
 function reload_img () {
-  mjpeg_img.src = "preview?time=" + new Date().getTime();
+  mjpeg_img.src = "preview?time=" + new Date().getTime() + "&pDelay=100000";
 }
 function error_img () {
   setTimeout("mjpeg_img.src = 'preview?time=' + new Date().getTime();", 100);
@@ -14,6 +14,6 @@ function initCapture() {
   reload_img();
 }
 function stopCapture() {
-	mjpeg_img.onload = function(){};
+  mjpeg_img.onload = function(){};
   mjpeg_img.onerror = function(){}
 }
